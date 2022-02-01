@@ -17,6 +17,7 @@ export type StorageKey =
   | 'READ-NEWS'
   | 'RESET'
   | 'SMASH-SERVER'
+  | 'STAKE-POOLS-LIST-VIEW-TOOLTIP'
   | 'TERMS-OF-USE-ACCEPTANCE'
   | 'THEME'
   | 'TOKEN-FAVORITES'
