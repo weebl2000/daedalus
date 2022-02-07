@@ -164,7 +164,10 @@ export class StakePoolsSearch extends Component<Props> {
           {isBigSearchComponent && (
             <div className={styles.viewButtons}>
               <span className={styles.separator}>|</span>
-              <PopOver content={intl.formatMessage(messages.gridIconTooltip)}>
+              <PopOver
+                content={intl.formatMessage(messages.gridIconTooltip)}
+                zIndex={20}
+              >
                 <button className={gridButtonClasses} onClick={onGridView}>
                   <SVGInline svg={gridIcon} />
                 </button>
@@ -172,6 +175,7 @@ export class StakePoolsSearch extends Component<Props> {
               {IS_GRID_REWARDS_VIEW_AVAILABLE && (
                 <PopOver
                   content={intl.formatMessage(messages.gridRewardsIconTooltip)}
+                  zIndex={20}
                 >
                   <button
                     className={gridRewardsButtonClasses}
@@ -181,7 +185,10 @@ export class StakePoolsSearch extends Component<Props> {
                   </button>
                 </PopOver>
               )}
-              <PopOver content={intl.formatMessage(messages.listIconTooltip)}>
+              <PopOver
+                content={intl.formatMessage(messages.listIconTooltip)}
+                zIndex={20}
+              >
                 <button className={listButtonClasses} onClick={onListView}>
                   <SVGInline svg={listIcon} />
                 </button>
